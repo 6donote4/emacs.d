@@ -35,8 +35,10 @@ jobs:
         git config --global user.name "6donote4"
 
     - name: Load upstream commits
-      run: git pull  https://github.com/purcell/emacs.d.git --no-edit --strategy-option ours
+      run: git pull https://github.com/purcell/emacs.d.git --no-edit --strategy-option ours
       
+     
+
     - name: Push Commits
       env:
         DOWNSTREAM_BRANCH: master
